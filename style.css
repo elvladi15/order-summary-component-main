@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+:root {
+  /* Primary */
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  /* Neutral */
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+body {
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-color: var(--very-pale-blue);
+  font-family: "Red Hat Display", sans-serif;
+}
+.container {
+  width: 350px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.topImage {
+  width: 100%;
+}
+.title {
+  margin-top: 30px;
+  text-align: center;
+  color: var(--dark-blue);
+  font-size: 24px;
+  font-weight: 900;
+}
+.description {
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+  color: var(--desaturated-blue);
+  padding: 0 40px;
+  line-height: 25px;
+}
+.annualPlanContainer {
+  box-sizing: border-box;
+  padding: 0 15px;
+  height: 80px;
+  margin: 0 auto;
+  width: calc(100% - 60px);
+  background-color: var(--very-pale-blue);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+.annualPlanText {
+  margin-left: 20px;
+}
+.annualPlanTitle {
+  color: var(--dark-blue);
+  font-weight: 900;
+}
+.annualPlanFee {
+  color: var(--desaturated-blue);
+}
+.annualPlanChange {
+  color: var(--bright-blue);
+  font-weight: 700;
+}
+.buttonsContainer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.paymentButton {
+  background-color: var(--bright-blue);
+  border: none;
+  border-radius: 15px;
+  height: 55px;
+  color: #fff;
+  font-family: "Red Hat Display", sans-serif;
+  width: calc(100% - 60px);
+  font-size: 16px;
+  font-weight: 900;
+  cursor: pointer;
+  box-shadow: 0 20px 15px 5px rgb(0, 0, 0, 0.1);
+}
+.cancelOrderButton {
+  margin: 30px 0;
+  color: var(--desaturated-blue);
+  font-weight: 900;
+  cursor: pointer;
+}
